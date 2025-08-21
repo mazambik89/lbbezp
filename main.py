@@ -114,7 +114,7 @@ async def cmd_stats(message: Message):
         total = len(rows)
         got_pdf = sum(1 for r in rows if r and r[4] == "True")
 
-    await message.answer(f"📊 Статистика:
+    await message.answer(f"📊" Статистика:
 Всего пользователей: {total}
 Получили PDF: {got_pdf}")
 
