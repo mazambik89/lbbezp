@@ -66,8 +66,7 @@ def main_keyboard():
 async def cmd_start(message: Message):
     log_user(message.from_user.id, message.from_user.username, message.from_user.first_name)
     await message.answer(
-        "👋 Привет! Здесь ты можешь получить мой PDF-гайд.
-"
+        "👋 Привет! Здесь ты можешь получить мой PDF-гайд."
         "Чтобы скачать его бесплатно, подпишись на канал и вернись сюда.",
         reply_markup=main_keyboard()
     )
